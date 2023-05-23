@@ -1,1 +1,3 @@
 # linkace
+
+Linkace chrome extension
