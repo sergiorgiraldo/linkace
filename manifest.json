@@ -4,14 +4,15 @@
 	"name": "Add url to linkace",
 	"description": "Add url to linkace",
 	"version": "1.0.0",
-
+	"permissions": ["activeTab", "tabs"],
 	"content_scripts": [
 		{
 			"matches": ["<all_urls>"],
 			"js": ["linkace.js"]
 		}
 	],
-
-	"permissions": ["activeTab"],
+	"background": {
+		"service_worker": "background.js"
+	},
 	"icons": {}
 }
